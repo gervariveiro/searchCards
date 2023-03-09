@@ -1,0 +1,64 @@
+body {
+  height: 800px;
+  color: #44484a; }
+
+html {
+  font-size: 13px; }
+
+li {
+  list-style-type: none; }
+
+.inputName {
+  width: 500px; }
+
+.inputCK {
+  width: 350px; }
+
+.cardImage {
+  width: 300px; }
+
+.card:hover {
+  -webkit-box-shadow: 0 0 10px rgba(134, 134, 134, 0.555);
+          box-shadow: 0 0 10px rgba(134, 134, 134, 0.555); }
+
+.bg-primary {
+  background-color: #098877 !important; }
+
+.text-primary {
+  color: #098877 !important; }
+
+.btn-primary {
+  background-color: #098877 !important;
+  border-color: #044038 !important; }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #066256 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(9, 136, 119, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(9, 136, 119, 0.5) !important; }
+
+.btn-primary:active {
+  background-color: #066256 !important;
+  border-color: #032823 !important; }
+
+.btn-secondary {
+  background-color: #1d89ee !important;
+  border-color: #0d62b1 !important; }
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #1074d2 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(29, 137, 238, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(29, 137, 238, 0.5) !important; }
+
+.btn-secondary:active {
+  background-color: #1074d2 !important;
+  border-color: #0c5599 !important; }
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #1074d2 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem #1d89ee !important;
+          box-shadow: 0 0 0 0.2rem #1d89ee !important; }
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,97 @@
+
+
+$principal: rgb(9, 136, 119);
+$secundario: rgb(29, 137, 238);
+$success:green;
+$danger:red;
+$dark:rgba(134, 134, 134, 0.555);
+$texto:#44484a;
+
+
+
+body{
+    height: 800px;
+    color: $texto;
+}
+
+html{
+    font-size: 13px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.inputName{
+    width: 500px;
+}
+
+.inputCK{
+    width: 350px;
+}
+
+
+.cardImage{
+    width: 300px;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px $dark;
+}
+
+
+.bg-primary{
+    background-color: $principal !important;
+}
+
+
+.text-primary{
+   color: $principal !important;
+}
+
+.btn-primary{
+    background-color: $principal !important;
+    border-color:darken($principal,15%) !important;
+ }
+
+ .btn-primary:hover,
+ .btn-primary:focus
+ {
+    background-color: darken($principal,8%) !important;
+    box-shadow: 0 0 0 0.2rem rgba($principal,.5) !important;
+ }
+
+ .btn-primary:active {
+    background-color: darken($principal,8%) !important;
+    border-color:darken($principal,20%) !important;
+ }
+
+
+ .btn-secondary{
+    background-color: $secundario !important;
+    border-color:darken($secundario,15%) !important;
+ }
+
+ .btn-secondary:hover,
+ .btn-secondary:focus
+ {
+    background-color: darken($secundario,8%) !important;
+    box-shadow: 0 0 0 0.2rem rgba($secundario,.5) !important;
+ }
+
+ .btn-secondary:active {
+    background-color: darken($secundario,8%) !important;
+    border-color:darken($secundario,20%) !important;
+ }
+
+ .btn-secondary:hover,
+ .btn-secondary:focus
+ {
+    background-color: darken($secundario,8%) !important;
+    box-shadow: 0 0 0 0.2rem rgba($secundario,2) !important;
+ }
+
+
+
+
+ 
