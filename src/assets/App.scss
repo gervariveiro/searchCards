@@ -5,13 +5,13 @@ $secundario: rgb(29, 137, 238);
 $success:green;
 $danger:red;
 $dark:rgba(134, 134, 134, 0.555);
-$texto:#44484a;
+$texto:#b9fdf8;
 
 
 
 body{
     height: 800px;
-    color: $texto;
+    background-color: #282d30 !important;
 }
 
 html{
@@ -22,14 +22,13 @@ li{
     list-style-type: none;
 }
 
+.title{
+    color:rgb(118, 236, 221)
+}
+
 .inputName{
-    width: 500px;
+    width: 400px !important;
 }
-
-.inputCK{
-    width: 350px;
-}
-
 
 .cardImage{
     width: 300px;
@@ -48,6 +47,7 @@ li{
 .text-primary{
    color: $principal !important;
 }
+
 
 .btn-primary{
     background-color: $principal !important;

@@ -65,8 +65,8 @@ axios.get(API_KEY).then(function(response) {
 
   return (
     <Container>
-      <h3 className="my-5 justify-content-center">Buscador de cartas</h3>
-      <Form.Control className="my-2 inputName" type="text" name="name" onChange={e => setSearchText(e.target.value)} placeholder="Nombre de la carta" />
+      <h3 className="my-5 justify-content-center title">¿Qué carta te gustaría encontrar?</h3>
+      <Form.Control className="my-2 inputName" type="text"  name="name" onChange={e => setSearchText(e.target.value)} placeholder="Ingresa aquí tu consulta" />
       <Button variant="primary" className='my-3' type="submit" onClick={e => searchForCard(e)}>
         Buscar Carta
       </Button>
@@ -81,7 +81,7 @@ console.log(data.imageUrl)
             <li>
             <Card className="d-inline">
               <Card.Title>{data.name}</Card.Title>
-              <Card.Img className="cardImage" variant="top" src={data.imageUrl} />
+              <img className="cardImage" variant="top" src={data.imageUrl} />
               <p>{data.text}</p>
             </Card>
             
