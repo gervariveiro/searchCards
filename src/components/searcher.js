@@ -83,11 +83,6 @@ console.log(data.imageUrl)
               <Card.Title>{data.name}</Card.Title>
               <Card.Img className="cardImage" variant="top" src={data.imageUrl} />
               <p>{data.text}</p>
-              <Form.Control className="my-2 inputCK"  type="text" name="name" placeholder="Agregar CK" onChange= { handleInputChange }/>
-              <Form.Control className="my-2 inputCK" type="text" name="name" placeholder="Precio de la carta USD" />
-              <Button variant="secondary" className='my-3' type="submit" onClick={ saveData }>
-                Agregar
-              </Button>
             </Card>
             
               </li>

@@ -18,8 +18,7 @@ li {
   width: 300px; }
 
 .card:hover {
-  -webkit-box-shadow: 0 0 10px rgba(134, 134, 134, 0.555);
-          box-shadow: 0 0 10px rgba(134, 134, 134, 0.555); }
+  box-shadow: 0 0 10px rgba(134, 134, 134, 0.555); }
 
 .bg-primary {
   background-color: #098877 !important; }
@@ -34,8 +33,7 @@ li {
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #066256 !important;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(9, 136, 119, 0.5) !important;
-          box-shadow: 0 0 0 0.2rem rgba(9, 136, 119, 0.5) !important; }
+  box-shadow: 0 0 0 0.2rem rgba(9, 136, 119, 0.5) !important; }
 
 .btn-primary:active {
   background-color: #066256 !important;
@@ -48,8 +46,7 @@ li {
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: #1074d2 !important;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(29, 137, 238, 0.5) !important;
-          box-shadow: 0 0 0 0.2rem rgba(29, 137, 238, 0.5) !important; }
+  box-shadow: 0 0 0 0.2rem rgba(29, 137, 238, 0.5) !important; }
 
 .btn-secondary:active {
   background-color: #1074d2 !important;
@@ -58,7 +55,6 @@ li {
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: #1074d2 !important;
-  -webkit-box-shadow: 0 0 0 0.2rem #1d89ee !important;
-          box-shadow: 0 0 0 0.2rem #1d89ee !important; }
+  box-shadow: 0 0 0 0.2rem #1d89ee !important; }
 
 /*# sourceMappingURL=App.css.map */
