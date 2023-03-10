@@ -1,5 +1,6 @@
 import './assets/App.css';
-import Searcher from './components/searcher';
+import Searcher from './pages/searcher';
+import { BrowserRouter, Route,Routes } from "react-router-dom";
 
 function App() {
 
@@ -9,7 +10,11 @@ function App() {
 
   return (
   <div className='App'>
-    <Searcher/>
+    <BrowserRouter basename="/">
+          <Routes>
+            <Route path="/" element={<Searcher/>} />
+          </Routes>
+      </BrowserRouter>
   </div>
   );
 }
