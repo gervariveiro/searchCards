@@ -11,7 +11,7 @@ $texto:#b9fdf8;
 
 body{
     height: 800px;
-    background-color: #282d30 !important;
+    background-color: #151616 !important;
 }
 
 html{
@@ -23,6 +23,20 @@ li{
 }
 
 .title{
+    font-family: 'Golos Text', sans-serif;
+    font-weight: bolder;
+    color:rgb(118, 236, 221)
+}
+
+.scrollImg{
+    border-radius: 10px;
+}
+
+.title2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight:300;
+    max-width: 500px;
     color:rgb(118, 236, 221)
 }
 

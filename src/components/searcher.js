@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Container from 'react-bootstrap/Container';
+import ScrollRact from '../assets/Scroll.JPG';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -9,18 +10,8 @@ function Searcher() {
 
 const [searchText, setSearchText] = useState("");
 const [cardData, setCardData] = useState(searchForCard);
-const [inputText, setInputText] = useState("");
 
-const handleInputChange = (e) => {
-  const text = e.target.value
-  setInputText(text);
-  console.log(inputText);
-}
 
-const saveData = ()  => {
-  localStorage.setItem("ck", inputText);
-  console.log("se ha guardado CK")
-}
 
 
 function searchForCard(event) {
@@ -64,8 +55,11 @@ axios.get(API_KEY).then(function(response) {
 //console.log(searchText) console log para controlar lo escrito en el input.
 
   return (
-    <Container>
-      <h3 className="my-5 justify-content-center title">¿Qué carta te gustaría encontrar?</h3>
+    <Container className='justify-content-md-center'>
+      <h3 className="my-5 justify-content-center title pt-5">¿Qué carta te gustaría encontrar?</h3>
+      <img className='pb-5 scrollImg' alt='' src={ScrollRact}/>
+      <p className="title2 py-4">Proyecto de portfolio. Utilizando React y axios para realizar consultas
+         a una api externa. <br></br> El resultado muestra distintas versiones de la carta.</p>
       <Form.Control className="my-2 inputName" type="text"  name="name" onChange={e => setSearchText(e.target.value)} placeholder="Ingresa aquí tu consulta" />
       <Button variant="primary" className='my-3' type="submit" onClick={e => searchForCard(e)}>
         Buscar Carta
@@ -73,18 +67,17 @@ axios.get(API_KEY).then(function(response) {
 
       {searchText !== ("") ?
           <ul> 
-          {cardData.slice(0,1).map((data) => {
+          {cardData.map((data) => {
 //slice(0,1) 
 console.log(data.imageUrl)
           return<li>
           <ul>
             <li>
-            <Card className="d-inline">
-              <Card.Title>{data.name}</Card.Title>
-              <img className="cardImage" variant="top" src={data.imageUrl} />
-              <p>{data.text}</p>
-            </Card>
-            
+              <Card className="d-inline">
+                <Card.Title className='title'>{data.name}</Card.Title>
+                <img className="cardImage" variant="top" src={data.imageUrl} alt="" />
+                <p className='title2 mt-3'>{data.text}</p>
+              </Card>       
               </li>
             </ul>
           </li>
