@@ -12,7 +12,7 @@ function App() {
   <div className='App'>
     <BrowserRouter basename="/searchCards">
           <Routes>
-            <Route path="/searchCards" element={<Searcher/>} />
+            <Route exact path="/" element={<Searcher/>} />
           </Routes>
       </BrowserRouter>
   </div>
