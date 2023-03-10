@@ -10,9 +10,9 @@ function App() {
 
   return (
   <div className='App'>
-    <BrowserRouter basename="/searchCards">
+    <BrowserRouter basename="/">
           <Routes>
-            <Route exact path="/" element={<Searcher/>} />
+            <Route exact path="/searchCards" element={<Searcher/>} />
           </Routes>
       </BrowserRouter>
   </div>
