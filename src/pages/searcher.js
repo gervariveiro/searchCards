@@ -36,7 +36,7 @@ axios.get(API_KEY).then(function(response) {
     const cardsFilter = response.data.cards.filter((item)=>item.imageUrl !== undefined) /****** */  
     console.log(cardsFilter)               /****** */  
     
-    
+ 
  /********************************************************************************************************************* */ 
   
   setCardData(cardsFilter);
@@ -56,13 +56,13 @@ axios.get(API_KEY).then(function(response) {
 
   return (
     <Container className='justify-content-md-center'>
-      <h3 className="my-5 justify-content-center title pt-5">¿Qué carta te gustaría encontrar?</h3>
+      <h1 className="my-3 justify-content-center title pt-5">Searcher for cards of MTG</h1>
+      <h3 className="my-5 justify-content-center title pt-5">Which card would you like to find?</h3>
       <img className='pb-5 scrollImg' alt='' src={ScrollRact}/>
-      <p className="title2 py-4">Proyecto de portfolio. Utilizando React y axios para realizar consultas
-         a una api externa. <br></br> El resultado muestra distintas versiones de la carta.</p>
-      <Form.Control className="my-2 inputName" type="text"  name="name" onChange={e => setSearchText(e.target.value)} placeholder="Ingresa aquí tu consulta" />
+      <p className="title2 py-4">Portfolio project. Using React and axios to query an external api. <br></br> The result shows different versions of the searched card.</p>
+      <Form.Control className="my-2 inputName" type="text"  name="name" onChange={e => setSearchText(e.target.value)} placeholder="Enter your query here" />
       <Button variant="primary" className='my-3' type="submit" onClick={e => searchForCard(e)}>
-        Buscar Carta
+        Search
       </Button>
 
       {searchText !== ("") ?
